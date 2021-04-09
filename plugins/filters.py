@@ -169,7 +169,7 @@ async def addfilter(client, message):
     await add_filter(grp_id, text, reply_text, btn, fileid, alert)
 
     await message.reply_text(
-        f"Filter for  `{text}`  added in  **{title}**",
+        f"**{title}** grubuna `{text}` filtresi eklendi.",
         quote=True,
         parse_mode="md"
     )
@@ -248,7 +248,7 @@ async def deletefilter(client, message):
                 await message.reply_text("Make sure I'm present in your group!!", quote=True)
                 return
         else:
-            await message.reply_text("Hiçbir gruba bağlı değilim!", quote=True)
+            await message.reply_text("Hiçbir gruba bağlı değili", quote=True)
 
     elif (chat_type == "group") or (chat_type == "supergroup"):
         grp_id = message.chat.id
