@@ -56,7 +56,7 @@ async def addconnection(client,message):
             addcon = await add_connection(str(group_id), str(userid))
             if addcon:
                 await message.reply_text(
-                    f"Sucessfully connected to **{title}**\nNow manage your group from my pm !",
+                    f"**{title}** başarıyla bağlandı!\nBeni özel mesajdan yönetebilirsin!",
                     quote=True,
                     parse_mode="md"
                 )
@@ -68,11 +68,11 @@ async def addconnection(client,message):
                     )
             else:
                 await message.reply_text(
-                    "You're already connected to this chat!",
+                    "Bu grup sohbete bağlı!",
                     quote=True
                 )
         else:
-            await message.reply_text("Add me as an admin in group", quote=True)
+            await message.reply_text("Beni yönetici olarak gruba ekle", quote=True)
     except Exception as e:
         print(e)
         await message.reply_text(

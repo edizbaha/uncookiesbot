@@ -224,7 +224,7 @@ async def get_all(client, message):
                 )
             return
     else:
-        filterlist = f"There are no active filters in **{title}**"
+        filterlist = f"**{title}** grubunda aktif filtre yok"
 
     await message.reply_text(
         text=filterlist,
@@ -248,7 +248,7 @@ async def deletefilter(client, message):
                 await message.reply_text("Make sure I'm present in your group!!", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("Hiçbir gruba bağlı değilim!", quote=True)
 
     elif (chat_type == "group") or (chat_type == "supergroup"):
         grp_id = message.chat.id
