@@ -17,8 +17,8 @@ Yardım için <i>/help</i> komutunu yazınız.</b>
 /about - Hakkımda
 
 <b>Filtre Komutları:</b>
-/add <code><filtre ismi> <yanıt></code> - Yeni filtre
-/del <code><filtre ismi></code> - Filtreyi sil
+/add <code>filtre ismi yanıt</code> - Yeni filtre
+/del <code>filtre ismi</code> - Filtreyi sil
 /delall - Tüm filtreleri sil (Sadece yönetici)
 /viewfilters - Tüm filtreleri listeler
 
